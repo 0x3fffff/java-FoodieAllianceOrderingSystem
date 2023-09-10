@@ -1,0 +1,35 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/res/Shop.png" )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "South"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "总金额：0元"
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 330, 300 )
+		} )
+	}
+}

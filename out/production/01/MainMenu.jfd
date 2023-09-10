@@ -1,0 +1,47 @@
+JFDML JFormDesigner: "8.0.0.0.194" Java: "11.0.13" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.swingx.VerticalLayout ) ) {
+			name: "this"
+			"title": "吃货联盟订餐系统"
+			"defaultCloseOperation": 3
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/res/Home.png" )
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "我要订餐"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "查看餐袋"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "签收订单"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "删除订单"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button4MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "我要点赞"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button5MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "退出系统"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button6MouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 245, 210 )
+		} )
+	}
+}
